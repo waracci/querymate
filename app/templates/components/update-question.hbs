@@ -1,0 +1,28 @@
+{{#if updateQuestionForm}}
+<h2>Welcome to querymate update form</h2>
+    <h4>Update {{question.author}}'s question</h4>
+
+<div>
+    <form>
+        <div class="form-group">
+            <label for="author">Author</label>
+            {{input value=author id='author' placeholder=question.author}}
+        </div>
+        <div class="form-group">
+            <label for="quiz">Question</label>
+            {{input value=quiz id='quiz' placeholder=question.quiz}}
+        </div>
+        <div class="form-group">
+            <label for="content">Content</label>
+            {{input value=content id='content' placeholder=question.content}}
+        </div>
+        <div class="form-group">
+            <label for="additionalContent">AdditionalContent</label>
+            {{input value=additionalContent id='additionalContent' placeholder=question.additionalContent}}
+        </div>
+        <button {{action 'update' question}} >update question</button>
+    </form>
+</div>
+{{else}}
+    <button {{action 'updateQuestionForm'}} >Update this question</button>
+{{/if}}
