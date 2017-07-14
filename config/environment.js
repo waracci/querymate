@@ -16,6 +16,14 @@ module.exports = function(environment) {
         Date: false
       }
     },
+    firebase: {
+    apiKey: "AIzaSyCXx8y0BO-NwSiuLZYV5q58onPhXuBX51s",
+    authDomain: "querymate-905ad.firebaseapp.com",
+    databaseURL: "https://querymate-905ad.firebaseio.com",
+    projectId: "querymate-905ad",
+    storageBucket: "",
+    messagingSenderId: "1046800386366"
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance

@@ -1,0 +1,12 @@
+<h1>Welcome to QueryMate</h1>
+<p>We hope you get satisfactory answers.</p>
+
+
+<ul>
+    {{#each model as |question|}}
+       {{question-tile question=question}}
+    {{/each}}
+</ul>
+
+{{#link-to 'about'}}About Page{{/link-to}}
+{{#link-to 'contact'}}Contact Page{{/link-to}}
