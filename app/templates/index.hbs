@@ -3,13 +3,24 @@
 
 
 <ul>
-    {{#each model as |question|}}
+    {{#each model.questions as |question|}}
        {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
     {{/each}}
 </ul>
 
 {{new-question saveQuestion2="saveQuestion3"}}
 
+
+<h2>All Answers</h2>
+
+<ul>
+    {{#each model.answers as |answer|}}
+        <li> {{answer.author}} *** {{answer.subject}} </li>
+    {{/each}}
+</ul>
+
+
+{{new-answer saveAnswer="saveAnswer"}}
 
 {{#link-to 'about'}}About Page{{/link-to}}
 {{#link-to 'contact'}}Contact Page{{/link-to}}
