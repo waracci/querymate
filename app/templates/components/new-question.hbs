@@ -1,0 +1,27 @@
+{{#if addNewQuestion}}
+<p>Welcome to querymate questions:</p>
+<h4>Ask a question</h4>
+<div>
+    <form>
+        <div class="form-group">
+            <label for="author">Author</label>
+            {{input value=author id='author'}}
+        </div>
+        <div class="form-group">
+            <label for="question">Question</label>
+            {{input value=question id='question'}}
+        </div>
+        <div class="form-group">
+            <label for="content">Content</label>
+            {{input value=content id='content'}}
+        </div>
+        <div class="form-group">
+            <label for="additionalContent">AdditionalContent</label>
+            {{input value=additionalContent id='additionalContent'}}
+        </div>
+        <button {{action 'saveQuestion1'}} >Post this question to querymate</button>
+    </form>
+</div>
+{{else}}
+<button {{action 'questionFormShow'}} >Ask a new question</button>
+{{/if}}
