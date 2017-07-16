@@ -1,26 +1,40 @@
-<h1>Welcome to QueryMate</h1>
-<p>We hope you get satisfactory answers.</p>
+<div class="page-header text-center">
+  <h1 class="text-primary">Browse through the latest questions:</h1><hr>
+</div>
+
+<div class="row">
+
+  {{#each model.questions as |question|}}
+  <div class="col-md-4">
+    {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
+  </div>
+  {{/each}}
+</div>
 
 
-<ul>
-    {{#each model.questions as |question|}}
-       {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
-    {{/each}}
-</ul>
 
 {{new-question saveQuestion2="saveQuestion3"}}
 
 
 <h2>All Answers</h2>
 
-<ul>
-    {{#each model.answers as |answer|}}
-        <li> {{answer.author}} *** {{answer.subject}} </li>
-    {{/each}}
-</ul>
+<div class="">
+  {{#each model.answers as |answer|}}
+  <p class="tile"> <span class="label label-success">{{answer.author}}</span> - {{answer.subject}} </p>
+  {{/each}}
+</div>
 
 
-{{new-answer saveAnswer="saveAnswer"}}
 
-{{#link-to 'about'}}About Page{{/link-to}}
-{{#link-to 'contact'}}Contact Page{{/link-to}}
+
+
+<div class="footer-tile text-center">
+  <div class="row">
+    <div class="col-md-6">
+      <p class="lead">{{#link-to 'about'}}About Page{{/link-to}}</p>
+    </div>
+    <div class="col-md-6">
+      <p class="lead">{{#link-to 'contact'}}Contact Page{{/link-to}}</p>
+    </div>
+  </div>
+</div>

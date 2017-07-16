@@ -1,0 +1,54 @@
+*{
+    font-family: 'Roboto', sans-serif;
+
+}
+body{
+    margin-top: 60px;
+    background: #F1F1FF;
+}
+.pad{
+    padding: 4%;
+    margin: 3%;
+    background: rgba(0,0,0,0.1);
+    box-shadow: 0 14px 43px 0 rgba(0,0,0,0.63);
+}
+.user-image{
+    box-shadow: 0 14px 43px 0 rgba(0,0,0,0.63);
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding-bottom: 2%;
+    margin: 3%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.cont {
+    padding: 2px 16px;
+}
+.tile{
+    background: rgba(255,255,255,0.6);
+    padding: 16px;
+    margin-bottom: 7px;
+}
+.footer-tile{
+    background: #abc;
+    padding: 16px;
+    margin: 12px;
+
+}
+hr {
+  margin: 20px;
+  border: none;
+  height: 10px;
+  background-image: -webkit-linear-gradient(left, rgba(255,2,5,.5), rgba(137,11,138,.5), rgba(27,123,187,.5), rgba(47,195,44,.5), rgba(253,201,1,.5), rgba(255,91,2,.5), #ccc 15%, #ccc 85%, rgba(255,91,2,.5), rgba(253,201,1,.5), rgba(47,195,44,.5), rgba(27,123,187,.5), rgba(137,11,138,.5), rgba(255,2,5,.5));
+        background-image: -moz-linear-gradient(left, rgba(255,2,5,.5), rgba(137,11,138,.5), rgba(27,123,187,.5), rgba(47,195,44,.5), rgba(253,201,1,.5), rgba(255,91,2,.5), #ccc 15%, #ccc 85%, rgba(255,91,2,.5), rgba(253,201,1,.5), rgba(47,195,44,.5), rgba(27,123,187,.5), rgba(137,11,138,.5), rgba(255,2,5,.5)); 
+        background-image: -ms-linear-gradient(left, rgba(255,2,5,.5), rgba(137,11,138,.5), rgba(27,123,187,.5), rgba(47,195,44,.5), rgba(253,201,1,.5), rgba(255,91,2,.5), #ccc 15%, #ccc 85%, rgba(255,91,2,.5), rgba(253,201,1,.5), rgba(47,195,44,.5), rgba(27,123,187,.5), rgba(137,11,138,.5), rgba(255,2,5,.5));
+        background-image: -o-linear-gradient(left, rgba(255,2,5,.5), rgba(137,11,138,.5), rgba(27,123,187,.5), rgba(47,195,44,.5), rgba(253,201,1,.5), rgba(255,91,2,.5), #ccc 15%, #ccc 85%, rgba(255,91,2,.5), rgba(253,201,1,.5), rgba(47,195,44,.5), rgba(27,123,187,.5), rgba(137,11,138,.5), rgba(255,2,5,.5));
+} 

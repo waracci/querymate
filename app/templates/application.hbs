@@ -1,23 +1,66 @@
-
-<nav class="navbar navbar-default" role="navigation">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">QueryMate</a>
-    </div>
+    <a class="navbar-brand" href="/">QueryMate</a>
+  </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="http://waracci.ml/" target="_blank">View Portfolio</a></li>
-            <li><a href="http://waracci.ml/" target="_blank">morriswarachi0@gmail.com</a></li>
-        </ul>
-    </div><!-- /.navbar-collapse -->
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="http://waracci.ml/" target="_blank">View Portfolio</a></li>
+      <li><a href="http://waracci.ml/" target="_blank">morriswarachi0@gmail.com</a></li>
+      <li><a href="/about">about project</a></li>
+      <li><a href="/contact">contact project</a></li>
+    </ul>
+  </div>
+  <!-- /.navbar-collapse -->
 </nav>
+<div class="container">
+  <div class="tile text-center">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+    <img src="http://i.imgur.com/aHEZdjm.png" alt="" class="img-responsive">
+      </div>
+    </div>
+    <h1>Welcome to QueryMate</h1>
+    <hr>
+    <p>We hope you get satisfactory answers.</p>    
+  </div>
 
-{{outlet}}
+    <div class="alert alert-success">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <strong>Welcome to QueryMate!</strong> Ask a question and try answering some of the posted questions with relevant answers.
+    </div>
+  {{outlet}}
+</div>
+
+<footer>
+  <div class="footer-tile text-center">
+    <div class="row">
+      <div class="col-md-4">
+        <h4>About Project:</h4>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque iure id, architecto exercitationem omnis asperiores.</p>
+      </div>
+      <div class="col-md-4">
+          <h2>QueryMate Inc</h2>
+          <p class="lead">Getting your questions answered since ... <br> When was this?</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Contact Me:</h4>
+        <hr>
+          <p>+254 708 44 33 96 </p>
+
+          <p>[email protected]</p>
+
+          {{#link-to 'about'}}About page{{/link-to}}
+      </div>
+    </div>
+  </div>
+</footer>

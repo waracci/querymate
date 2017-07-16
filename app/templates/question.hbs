@@ -1,5 +1,10 @@
-<h2>More information about {{model.author}}'s {{model.quiz}} </h2>
+<div class="page-header">
+<h2 class="text-primary">More information about {{model.author}}'s {{model.quiz}} </h2>
+</div>
 
 {{update-question question=model update="update"}}
 
-{{question-detail question=model destroyQuestion="destroyQuestion"}}
+{{question-detail question=model destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
+
+
+{{new-answer saveAnswer="saveAnswer" question=model}}

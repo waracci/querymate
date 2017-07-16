@@ -1,3 +1,32 @@
-<li>
-    {{#link-to 'question' question.id}} {{question.author}}'s {{question.quiz}} {{/link-to}}
-</li>
+
+{{#link-to 'question' question.id}}
+<div class="thumbnail">
+  <div class="caption">
+      <h3 class="text-primary">{{question.author}} asks: </h3>
+    <div class="row">
+        <div class="col-md-9">
+         {{question.quiz}} 
+        </div>
+        <div class="col-md-3 text-center">
+            <img src="http://www.careerlauncher.com/jaipur/img/testimonial/profile.jpg" alt="user-avatar" class="img-responsive"><br>
+            <p class="">{{question.author}}</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="text-left">
+                <a href="/about" class="btn btn-success btn-xs">Upvote</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="text-right">
+                <a href="/about" class="btn btn-danger btn-xs">Downvote</a>
+            </div>
+        </div>
+    </div>
+
+
+  </div>
+</div>
+{{/link-to}}

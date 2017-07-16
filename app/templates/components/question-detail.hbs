@@ -1,4 +1,33 @@
-<li>{{question.author}} asks {{question.quiz}} </li> 
+<hr>
+<div class="panel panel-default">
+    <div class="panel-heading text-center">
+        <h2 class="panel-title"> {{question.author}} asks {{question.quiz}} </h2>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-9 col-xs-8">
+                <h2>Question asked by: {{question.author}}</h2>
+                <div class="well">
+                    <p class="lead"> {{question.quiz}} </p> <br>
+                    <p class="lead"> {{question.content}} </p>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-4 text-center">
+            <img src="http://www.infozonelive.com/styles/FLATBOOTS/theme/images/user4.png" alt="" class="img-responsive  user-image">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-header">
+<h2 class="text-primary">Answers for this question</h2>
+</div>
+    {{#each question.answers as |answer|}}
+        {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
+    {{/each}}
 
 
-<button {{action 'delete' question}} >delete question</button>
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+<button {{action 'delete' question}} class="btn btn-danger btn-block">delete question</button>
+    </div>
+</div>

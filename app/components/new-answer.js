@@ -11,7 +11,8 @@ export default Ember.Component.extend({
             var params = {
                 author: this.get('author'),
                 subject: this.get('subject'),
-                content: this.get('content')
+                content: this.get('content'),
+                question: this.get('question')
             };
             console.log('processing data');
             this.set('addNewAnswer', false);
